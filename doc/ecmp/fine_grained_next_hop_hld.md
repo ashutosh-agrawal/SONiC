@@ -82,10 +82,10 @@ At a high level the following should be supported:
 Phase #1
 - Should be able to configure a Fine Grained ECMP group which defines a static means of redistribution of ECMP upon next-hop modifications based upon the fine grained ECMP SAI proposal
 - Standard route modifications should enable special ECMP behavior for those prefixes/nexthops which desire Fine Grained ECMP. For all other prefixes/nexthops the standard ECMP behavior should apply. 
-- Ability to enable consistent hashing via Fine grained ECMP for a prefix or a statically defined ECMP group.
+- Ability to enable consistent hashing via Fine grained ECMP for a statically defined prefix.
 - Ability to specify a group(bank) in which ECMP redistribution should be performed out of a set of available next-hops
 - Warm restart support.
-- Handling linkdown scenarios by evoking nexthop withdrawal/addition based on link operational status changes.
+- Optionally handling linkdown scenarios by evoking nexthop withdrawal/addition based on link operational status changes.
 
 Phase #2
 - CLI commands to configure Fine Grained ECMP
